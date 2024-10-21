@@ -1,0 +1,122 @@
+<!-- Ndertimi i faqes HOME -->
+
+<!DOCTYPE html>
+<html>
+  <!-- Ne koken e dokumenetit html kemi te vendosur tagun per te bere te njohur perdorimin e karaktereve
+  ne kete faqe, nje tjeter tag per te perputhur permasat e faqes me ate te ekranit, titullin e faqes te vendosur ne krye si dhe logon.
+  Kemi vendosur dhe links te cilet bejne te mundur lidhjen e kesaj faqeje me stilizimet e ndodhura ne faqe te tjera -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> AquaMarine</title>
+        <link rel="icon" href="/assets/title_logo.jpg">
+        <link rel="stylesheet" href="/cssPages/navbar.css">
+        <link rel="stylesheet" href="/cssPages/footer.css">
+        <link rel="stylesheet" href="/cssPages/home.css">
+        <script src="/jsPages/reservation.js"></script>
+    </head>
+
+    <body> 
+      <!-- Me ane te nav tag kemi ber te mundur vendosjen e navbarit ne kete faqe me ane te script-it -->
+      <nav class="navbar">
+        <script src="/jsPages/navbar.js"></script>
+      </nav>
+      
+      <div>
+        <!-- Ne kete grup (home) kemi vendosur 3 rreshta ne paragrape per te bere me te lehte stilizimin. 
+        Kjo do te vendoset ne hyrje te faqs se menus. -->
+        <div class="home">
+          <p class="title1">---   DELIGHTFUL EXPERIENCE   --- </p>
+          <p class="title2"> An experience you will cherish forever</p>
+          <p class="title3"> A plate of happiness is here!</p>
+        </div>
+        
+        <!--Ne kete grup kodi (middle-home) kemi te vendosur 2 rreshta me shkrime dhe 3 menutypes 
+          te cileve u kemi bashkuar imazhe, tekst dhe nje link qe te con ne faqen e muenus, per cdo grup-->
+        <div class="middle-home">
+          <p class="firstp">Memories are created here</p>
+          <p class="secondp">Food, in the end, in our own tradition, is something holy. <br> 
+            Its not about nutrients and calories. Its about sharing. Its <br>
+            about honesty. Its about identity.</p>
+            <div class="menuTypes">
+              <div class="breakfast">
+                <img class="bf_img" src="/assets/breakfast.webp">
+                <p>Coffee Bar & Breakfast</p>
+                <a href="/htmlPages/menu.html"> VIEW MORE </a>
+              </div>
+              <div class="restaurant">
+                <img class="ln_img" src="/assets/lunch.webp">
+                <p>Restaurant</p>
+                <a href="/htmlPages/menu.html"> VIEW MORE </a>
+              </div>
+              <div class="bar">
+                <img class="br_img" src="/assets/bar.webp">
+                <p>Lounge - Bar</p>
+                <a href="/htmlPages/menu.html"> VIEW MORE </a>
+              </div>
+            </div>
+        </div>
+      
+     
+       <!-- Krijome pjesen e  fundit te home ku do te vendoset forma e rezervimeve -->
+       <div class="home-ending" id="R">
+        <!-- Vendosim titullin mbi foton qe eshte vendosur ne filen css si bg -->
+        <h1 class="heading">RESERVE A TABLE</h1>
+        <!-- Fillojme me krijimin e formes se rezervimit -->
+        <div clas="reservation">
+          <!-- Krijojme kutine e pare ku perdoruesi do te zgjedhe numrin e pjesetareve nepermjet nje butoni me nje liste zgjedhjesh -->
+          <div class="box1">
+            <form class="form1">
+              <label for="options" class="abovebutton">Party Size</label>
+              <br>
+              <select id="options" name="Party Size" class="button">
+                <option value="option1">1 guest</option>
+              <option value="option1">2 guests</option>
+              <option value="option1">3 guests</option>
+              <option value="option1">4 guests</option>
+              <option value="option1">5 guests</option>
+              <option value="option1">6 guests</option>
+              <option value="option1">7 guests</option>
+              <option value="option1">8 guests</option>
+            </select>
+          </form>
+        </div>
+        <!-- Krijojme kjutine e dyte ku perdoruesi do te zgjedhe daten e rezervimit -->
+        <div class="box2">
+
+          <form class="form2">
+            <label for="date" class="abovebutton">Choose a date</label>
+            <br>
+          
+            <input type="date" id="date" name="date" class="button">
+          </form>
+        </div>
+        <!-- Krijojme kutine e trete ku perdoruesi do te zgjedhe oren e rezervimit -->
+        <div class="box3">
+          <form class="form3">
+            <label for="time" class="abovebutton">Choose a time</label>
+            <br>
+            <input type="time" id="time" name="time" class="button">
+          </form>
+        </div>
+        <!-- Krijojme kutine e katert ku perdoruesi do mund te beje submit rezervimin e tij me ane te butonit "Book" -->
+        <div class="box4">
+          <form class="form4">
+            <!-- Therrasim funksionin qe kemi krijuar ne javescript qe ben funksional butonin "Book" -->
+            <button class="button" onclick="bookReservation()">Book</button>
+        </form>
+        </div>
+
+      </div>
+      </div>
+        
+    </div> 
+       
+
+      <!-- Me ane te div tag kemi ber te mundur vendosjen e footer-it ne kete faqe me ane te script-it -->
+      <div class="footer">
+        <script src="/jsPages/footer.js"></script>
+      </div>
+    
+    </body>
+</html>

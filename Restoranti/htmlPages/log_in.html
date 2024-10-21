@@ -1,0 +1,102 @@
+<!-- Ndertimi i LOG-IN -->
+
+<!DOCTYPE html>
+<html>
+    <!-- Ne koken e dokumenetit html kemi te vendosur tagun per te bere te njohur perdorimin e karaktereve
+  ne kete faqe, nje tjeter tag per te perputhur permasat e faqes me ate te ekranit, titullin e faqes te vendosur ne krye si dhe logon.
+  Kemi vendosur dhe links te cilet bejne te mundur lidhjen e kesaj faqeje me stilizimet e ndodhura ne faqe te tjera -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Log-in - AquaMarine</title>
+        <link rel="icon" href="/assets/title_logo.jpg">
+        <link rel="stylesheet" href="/cssPages/log_in.css">
+        <link rel="stylesheet" href="/cssPages/navbar.css">
+        <link rel="stylesheet" href="/cssPages/footer.css">
+        
+    </head>
+    <body>
+        <!-- Me ane te nav tag kemi ber te mundur vendosjen e navbarit ne kete faqe me ane te script-it -->
+        <nav class="navbar">
+            <script src="/jsPages/navbar.js"></script>
+        </nav>
+        
+    <!-- Krijimi i tabeles login e cila permban format si input te type email, password
+        checkbox dhe vendosja e butonit dhe links -->
+    <div class="all_wrapper">
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2> Login </h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label> <input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">
+                            Register</a>
+                        </p>
+                    </div>
+                </form>
+
+            </div>
+
+            <!-- Krijimi i tabeles register e cili njesoj si ajo e log in do te permbaj inpute te tipit
+            text, email, password, permban nje buton, links, ejt.   -->
+
+            <div class="form-box register">
+                <h2> Registration </h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label> <input type="checkbox">
+                            I agree to the terms & conditions
+                        </label>
+                        
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#"
+                            class="login-link">
+                            Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Vendosja e scriptit per te bere funksional tabelat login dhe register -->
+        <script src="/jsPages/log_in.js"></script>
+            <!-- Me ane te div tag kemi ber te mundur vendosjen e footer-it ne kete faqe me ane te script-it -->
+        <div class="footer">
+            <script src="/jsPages/footer.js"></script>
+        </div>
+
+    </body>
+
+</html>

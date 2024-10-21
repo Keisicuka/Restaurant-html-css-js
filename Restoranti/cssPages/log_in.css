@@ -1,0 +1,189 @@
+/* Me ane te ketij grupi kodi bejme te mundur fshirjen e cdo hapsire te mundshme ne faqen e web per ta perfshire te 
+gjithe ate ne stilizim. */
+*{
+    margin: 0;
+    padding: 0;
+} *
+/* Kemi vendosur ne te gjithe trupin e faqes se webit si background imazhin me poshte */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/aqua.webp);
+    overflow-x: hidden;
+}
+/* Vendosja ne qender e inputeve te login dhe register te krijuara ne faqen html dhe pozicionimi i tyre ne menyren e duhur */
+.all_wrapper{
+    margin: 0;
+    padding: 0;
+    background-size:auto;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: solid 5px ;
+    
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden; 
+    transition: height .2s ease;
+     
+}
+/* Vendos elementet ne lartesine 520px kur jane aktiv */
+.wrapper.active{
+    height: 520px;
+}
+/* Stilizimi i tabeles login */
+.wrapper .form-box.login{
+    width: 100%;
+    padding: 40px;
+    color: white;
+}
+/* Kjo pjese e kodit CSS zbaton nje efekt kalimi 
+prej 0,18 sekondash per te bere pa probleme transformimin e 
+elementit dhe efekti kur eshte aktive */
+.wrapper .form-box.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.wrapper.active .form-box.login{
+    transition:none;
+    transform: translateX(400px);
+}
+/* Stilizimi i tabeles register */
+.form-box.register{
+    color: white;
+    padding: 40px;
+}
+
+/* Stilizimet e tabeles se regjistrimit edhe kur ajo eshte aktive */
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+/* Stilizimi i tekstit ne h2 */
+.form-box h2{
+    font-size: 30px; 
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+}
+/* Stilizimi i box-it qe permbajne format, inputet dhe label-at bashke me tekstin */
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin-top: 30px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline:none;
+    font-size: 16px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    padding-right: 35px;
+    padding-left: 5px;
+}
+/* Zbatimi i stilizimit te etiketës kur fusha e hyrjes është e fokusuar 
+ose ka hyrje të vlefshme, duke e lëvizur etiketën lart me 5 piksel. */
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+/* Stilizimi i inputit me type checkbox ne vendosje, ngjyra, font, etj */
+.remember-forgot{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: black;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top:3px ;   
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+/* Stilizimi i butonit  */
+.btn{
+    width: 100%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.496);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-top: 10px;
+}
+/* Rregullimi i tekstit dhe i linkut */
+.login-register{
+    font-size: 16px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top:3px ; 
+}
+.register-link{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    font-weight: 400;
+}
+.register-link:hover{
+    text-decoration: underline;
+}
+.login-link{
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    font-weight: 400;
+}
+.login-link:hover{
+    text-decoration: underline;
+}
+/* STILIZIMET PER MOBILE ME MADHESI EKRANI (414px-1200px) */
+@media only screen and (min-width: 414px) and (max-width: 1200px){
+     /* Heqja e scroll-it horizontal */
+    html,body{
+        overflow-x: hidden;
+      }
+}

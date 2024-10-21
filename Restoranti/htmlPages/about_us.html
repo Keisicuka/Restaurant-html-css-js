@@ -1,0 +1,94 @@
+<!-- Ndertimi i faqes ABOUT US -->
+<!DOCTYPE html>
+<html>
+    <!-- Ne koken e dokumenetit html kemi te vendosur tagun per te bere te njohur perdorimin e karaktereve ne kete faqe,
+         nje tjeter tag per te perputhur permasat e faqes me ate te ekranit, titullin e faqes te vendosur ne krye si dhe logon.
+         Kemi vendosur dhe links te cilet bejne te mundur lidhjen e kesaj faqeje me stilizimet e ndodhura ne faqe te tjera, specifikisht
+        me ate te navbar-it, footer-it dhe te faqes about us -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About Us - AquaMarine</title>
+        <link rel="icon" href="/assets/title_logo.jpg">
+        <link rel="stylesheet" href="/cssPages/navbar.css">
+        <link rel="stylesheet" href="/cssPages/footer.css">
+        <link rel="stylesheet" href="/cssPages/about_us.css">
+    </head>
+    <body>
+        <!-- Me ane te nav tag kemi ber te mundur vendosjen e navbarit ne kete faqe me ane te script-it -->
+        <nav class="navbar">
+            <script src="/jsPages/navbar.js"></script>
+        </nav>
+        <div>
+            <!-- Ne grupin e pare te div me emrin e klases ab_home kemi vendosur pjesen e pare te permbajtjes ne nje paragraf per te bere me te lehte 
+            me vone stilizimin e tekstit -->
+            <div class="ab_home">
+                <p>---  About Us  ---</p>
+            </div>
+            <!-- pjesen e dyte te faqen e kemi ndare ne 3 pjese ku: 
+            1- pjesa e pare do te permbaj nje paragraf tekst
+            2- pjesa e dyte do te permbaje nje foto
+            3- pjesa e trete do te permbaj nje timetable ne te cilen kemi perdorur listat per renditjen e elementeve-->
+            <div class="ab_second_part">
+                <div class="paragraph">
+                    <p>We believe in showcasing the talents of our diverse <br>
+                    team of chefs through creative, flavorful dishes that<br>
+                    highlight the freshest and highest quality ingredients. <br>
+                    Our commitment to fine dining means that every bite <br>
+                    at AquaMarine is an exceptional experience, whether <br>
+                    you are celebrating a special occasion or simply<br> 
+                    enjoying a night out.</p>
+                </div> 
+                <div class="ab_image">
+                    <img class="ab_image" src="/assets/ab_image.webp">
+                </div>
+                <div class="timetable">
+                    <ul>
+                        <li>
+                            MORNING TIME<br>
+                            Monday to Sunday<br>
+                            07:30 - 12:00<br><br><br>
+                        </li>
+                        <li>
+                            LUNCH TIME <br>
+                            Monday to Sunday <br>
+                            12:00 - 16:00 <br><br><br>
+                        </li>
+                        <li>
+                            DINNER TIME<br>
+                            Monday to Sunday<br>
+                            16:00 - 23:00
+                        </li>
+                    </ul>
+               </div>
+            </div>
+
+            <!-- Ne kete pjese te trete kemi vendosur ne fillim tekst dhe me pas nje imazh qe do te sherbej si ndares, pra ka funksion 
+            vetem estetik dhe ne pjesen tjeter kemi ndare ne 3 pjese 3 nga pikat e forta te ketij restoranti. Tek pikat e forta i kemi bashkuar
+            nga nje buton -->
+            <div class="ab_third_part">
+                <div class="ab_third_middle">
+                    <p class="choose_us"> WHY CHOOSE US </p>
+                    <img class="seperator" src="/assets/separator.svg"> 
+                    <p class="strengths"> Our Strengths </p>
+                </div>
+                <div class="strength0">
+                    <div class="strength1">
+                        <button class="bt_st_1">Fresh Food</button>
+                    </div>
+                    <div class="strength2">
+                        <button class="bt_st_2">Modern <br> Environment</button>
+                    </div>
+                    <div class="strength3">
+                        <button class="bt_st_3">Skilled Chefs</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Me ane te div tag kemi ber te mundur vendosjen e footer-it ne kete faqe me ane te script-it -->
+        <div class="footer">
+            <script src="/jsPages/footer.js"></script>
+          </div>
+    </body>
+</html>

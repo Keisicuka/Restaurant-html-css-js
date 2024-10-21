@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/jsPages/footer.js"></script>
+    </head>
+    
+    <body> 
+        <!-- Krijojme pjeen e footerit qe do te perdoret ne cdo faqe tonen  -->
+        <div class="underfooter">
+            <!-- Krijojme titullin e footerit -->
+            <h1 class="heading-footer">NEWSLETTER SIGN UP</h1><br><br>
+            <!-- Therrasim funksionin qe kemi krijuar ne javascript i cili do te beje buttonin funksional -->
+            <!-- Krijojme paragrafin qe fton klientet te bejne subscribe ne webfaqen tone -->
+            <!-- Krijome fushen ku klienti do te vendosi emailin -->
+            <!-- Krijojme butonin me te cilin do te beje subscribe -->
+            <form onsubmit="handleSubscription(event, this)">
+                <label for="email" class="text-footer">We've got plenty of news to share,<br> put your email and be the first to read all about it!</label>
+                <br>
+                <textarea id="email" name="email" rows="2" cols="40" class="text-area"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="SUBSCRIBE NOW" class="f-button">
+            </form>
+            <br>
+            <br>
+        </div>
+    </body>
+</html>

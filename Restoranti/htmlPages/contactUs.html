@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Contact Us-AquaMarine</title>
+        <link rel="icon" href="/assets/title_logo.jpg">
+        <link rel="stylesheet" href="/cssPages/navbar.css">
+        <link rel="stylesheet" href="/cssPages/footer.css">
+        <link rel="stylesheet" href="/cssPages/contactUs.css">
+        <script src="/jsPages/contactUS.js"></script>
+        
+    </head>
+    <body>
+        <!-- Therrasim filen e javascript qe permban navigation bar -->
+        <nav class="navbar">
+            <script src="/jsPages/navbar.js"></script>
+        </nav>
+                 
+      
+        <div>
+        <!-- Krijojme seksionin  e pare qe do te permbaje foton kryesore dhe titullin -->
+            <div class="home-p1">
+                <p class="bgtext">CONTACT US </p>
+            </div>
+            <!-- Krijojme seksionin e dyte qe do te permbaje informacion mbi oraret dhe format e kontaktit -->
+            <div class="home-p2">
+                <div class="box1">
+                    <h1 class="headingtext">Lunch Time</h1><br>
+                    <p class="ptext"> Monday to Sunday</p>
+                    <p class="ptext">12:00-18:00</p>
+                </div>
+                <div class="box2">
+                    <h1 class="headingtext">Contact</h1><br>
+                    <a href="">Email:booking@aquamarine.al</a><br>
+                    <a href="">Booking: +355 68 765 2002</a>
+                </div>
+                <div class="box3">
+                    <h1 class="headingtext">Dinner Time </h1><br>
+                    <p class="ptext">Monday to Sunday</p>
+                    <p class="ptext">18:00-23:00</p>
+                </div>
+            </div>
+            <!-- Krijojme pjesen e trete qe do te permbaje nje forme ne te cilen klientet mund te shkruajne reviewte e tyre ose feedbackun  -->
+            <div class="home-p3">
+                <div class="firstbox">
+                    <h1 class="headingtext">Message Us</h1><br>
+                    <p class="ptext">Have a question about our service? Contact us today</p><br>
+                    <!-- Therrasim funksionin qe kemi krijuar ne javascript per ti dhene funksion buttonit -->
+                    <form onsubmit="sendMessage(event, this)" class="form">
+                        <div>
+                          <textarea id="name" name="name" rows="2" cols="50" class="textarea" placeholder="Your name" onclick="sendMessage()"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                          <textarea id="email" name="email" rows="2" cols="50" class="textarea" placeholder="Your Email" onclick="sendMessage()"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                          <textarea id="phone" name="phone" rows="2" cols="50" class="textarea" placeholder="Phone Number" onclick="sendMessage()"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                          <textarea id="request" name="request" rows="4" cols="50" class="textarea" placeholder="Special Request" onclick="sendMessage()"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                          <input type="submit" value="SEND YOUR MESSAGE" class="button">
+                        </div>
+                      </form>
+                      <!-- Krijojme pjesen paralel me formularin ku do te vendosim nje imazh -->
+                </div>
+                <div class="secondbox">
+                    <!-- Shkruajme burimin nga ku do te merret imazhi -->
+                    <img class="bgimg" src="/assets/sculpture.png" alt="Sculpture"> 
+                </div>
+            </div>
+
+         
+        </div>
+        <!-- Therrasim filen qe permban pjesen e footerit -->
+        <div class="footer">
+            <script src="/jsPages/footer.js"></script>
+            
+          </div>
+
+    </body>
+</html>

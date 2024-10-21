@@ -1,0 +1,225 @@
+/* Me ane te ketij grupi kodi bejme te mundur fshirjen e cdo hapsire te mundshme ne faqen e web per ta perfshire te 
+gjithe ate ne stilizim. */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Kemi vendosur ne te gjithe trupin e faqes se webit si background imazhin me poshte */
+body{
+    background-image: url(/assets/aqua.webp);
+    overflow-x: hidden;
+}
+
+/* HOME */
+
+/* Kemi vendosur stilizimet per 2 rreshtat tekst qe ndodhen ne fillim te faqes duke i dhene gjeresi, rregulluar tekstin 
+dhe paraqitjen e tyre ne faqe */ 
+.home{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: solid rgba(0, 0, 0, 0.512) 10px;
+}
+.title1{
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+.title2{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.title3{
+    font-size: 20;
+}
+
+/* Ne pjesen e dyte te home kemi vendosur stilizimet per 3 rreshtat e tekstit. Kemi rregulluar ngjyrat,
+vendosjen e tekstit, hapsirat ndermjet, madhesine e tekstit, stilin */
+.middle-home{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-bottom: 100px;
+    border: solid rgba(219, 150, 32, 0.268) 25px;
+}
+.firstp{
+    font-size: 50px;
+    padding-top: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.secondp{
+    font-size: 18px;
+    padding-top: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* Kemi rregulluar hapsirat ndermjet 3 menutypes dhe kemi stilizuar paraqitjen e tyre te pergjithshme, tekstin, linkun*/
+.menuTypes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.breakfast,
+.restaurant,
+.bar{
+    border: solid white 1px;
+    border-radius: 10px;
+    width: 290px;
+    height: 450px;
+}
+.breakfast p,
+.restaurant p,
+.bar p{
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.breakfast a,
+.restaurant a,
+.bar a{
+    text-decoration: none;
+    color: white;
+   border: solid white;
+   padding: 5px;
+   background-color: rgba(255, 255, 255, 0.173);  
+}
+/*Ne grupin e pare te kodit kemi ndryshuar ngjyrat e links ne momentin qe pointeri vendoset siper tyre dhe ne grupin e dyte
+kemi ber stilizimet e imazheve*/
+.breakfast a:hover,
+.restaurant a:hover,
+.bar a:hover{
+    background-color:black;
+    color: rgb(185, 124, 50);
+}
+.bf_img,
+.ln_img,
+.br_img{
+    width: 290px;
+    border-radius: 10px;
+}
+
+
+/* Vendosim stilizimet per pjesen e body ku do te vendoset forma e rezervimit */
+.home-ending{
+    
+    background-image: url(/assets/reserveatable.jpg); 
+    background-size:cover;
+    background-attachment:fixed;
+    height: 500px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: solid rgba(0, 0, 0, 0.317) 15px;
+   
+}
+/* Vendosim stilzimet per titullin */
+.heading{
+    position:relative;
+    align-self: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:xx-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+   
+}
+/* Stilizojme formen e vendosjes se butonave qe do te perdoren per rezervim duke i vendosur ato njeri pas tjetrit horizontalisht */
+.reservation{
+  display: inline-block;
+
+}
+/* Vendosim stilzimet per te gjithe butonat njeheresh duke perfshire marginat, ngjyhren, menyren e vendosjes dhe hapsiren ndermjet tyre */
+.box1,
+.box2,
+.box3,
+.box4{
+  margin-top: 230px;
+  color: white;
+  display: inline-block;
+  padding: 50px;
+  
+}
+/* Vendosim stilizimet per butonin qe do te beje submit rezervimin e klientit */
+.button{
+  background-color:rgba(245, 245, 245, 0.589);
+  border: none;
+  color: black;
+  padding: 10px 30px;
+  text-align: left;
+  display: inline-block;
+  font-size: 12px;
+  font-family:Arial, Helvetica, sans-serif
+}
+/* Vendosim stilizimet per tekstin qe do te shfaqet mbi butonat */
+.abovebutton{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: medium;
+  text-align:center;
+  padding-bottom: 5px;
+
+}
+/* Vendosim stilizimin per fushat e perdorua tek forma */
+.text-area{
+  background-color:rgba(245, 245, 245, 0.589);
+  padding: 10px 30px;
+  text-align: left;
+  display: inline-block;
+  font-size: 12px;
+  font-family: 'Times New Roman', Times, serif; 
+}
+
+ /* STILIZIMET PER MOBILE ME MADHESI EKRANI (414px-1200px) */
+
+@media only screen and (min-width: 414px) and (max-width: 1200px){
+  /* Heqja e scroll-it horizontal */
+  html,body{
+    overflow-x: hidden;
+  }
+  /* Vendosja e elementeve ne kolona, rregullimet ne distance mes tyre, rregullimet e fonteve dhe te imazheve */
+  .menuTypes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.breakfast,
+.restaurant,
+.bar{
+    margin: 5px;
+    width: 150px;
+    height: 280px;
+}
+.breakfast p,
+.restaurant p,
+.bar p{
+    font-size: 15px;
+ }
+.bf_img, 
+.ln_img,
+.br_img{
+    width: 150px;
+}
+/* Vendosja ne kolona e elementeve box */
+.box1{
+    padding-top: 30px;
+    padding: 2px;
+}
+  .box2,
+  .box3,
+  .box4{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; 
+    margin-top: 5px;
+    padding: 2px; 
+  }
+}

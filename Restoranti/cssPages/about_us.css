@@ -1,0 +1,239 @@
+/* Me ane te ketij grupi kodi bejme te mundur fshirjen e cdo hapsire te mundshme ne faqen e web-it per ta perfshire te 
+gjithe ate ne stilizim. */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Kemi vendosur ne te gjithe trupin e faqes se webit si background imazhin me poshte dhe i kemi vendosur nje lartesi  
+dhe stilizimet qe fotoja te kete nje paraqitje te rregull ne qender */
+body{
+    background-image: url(/assets/about_us.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ABOUT US */
+
+/* Kemi vendosur stilizimin e pjese se pare te faqes qe eshte titulli about us. I kemi vendosur nje ngjyre pak transparente ne background, 
+kemi ndryshuar ngjyren e tij ne te bardhe, madhesine, pozicionin, stilin e shkrimit, e kemi vendosur ne qender etj */
+.ab_home{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: solid rgba(0, 0, 0, 0.512) 10px;
+}
+
+/* Kemi filluar me stilizimin e pjese se dyte ku kemi vensodur hapsire mes elementeve, kemi ndryshhuar ngjyren e backgroundit,
+lartesine e kesaj pjese, ejt */
+.ab_second_part{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border: solid rgba(184, 132, 47, 0.21) 8px;
+    height: 700px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Kemi vazhduar me stilizimin e paragrafit duke e pozicionuar ne qender dhe rregulluar paraqitjen e font-it */
+.paragraph{
+    margin-top: 180px;
+    text-align: center;
+    padding-top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 265px;
+    margin-bottom: 100px;
+    margin-left: 90px;
+    font-size: 18px;
+    border: solid rgba(184, 132, 47, 0.21) 1px;
+}
+/* Stilizimi i fotos te vendosur ne mes te faqes */
+.ab_image{
+    width: 370px;
+    height: 410px;
+    margin-top: 70px;
+    border-radius: 10px;
+}
+/* Kemi bere rregullime ne paraqitjen e tabeles duke i vendosur tekstin ne mes dhe duke bere stilimet e borderit */
+.timetable{
+    margin-top: 150px;
+    margin-right: 130px;
+    margin-bottom: 100px;
+    text-align: center;
+    border: solid rgb(144, 91, 34) 1px;
+    border-radius: 10px;
+    padding: 30px;
+    padding-top: 60px;
+    padding-bottom: 55px;
+    height: 265px;
+    width: 200px;
+    font-size: 18px;
+}
+
+/* Ketu kemi filluar stilimin e pjeses se trete te about us page duke vendosur nje background, lartesine e kesaj pjese,
+dhe stilizimin e borderit */
+.ab_third_part{
+    height: 800px;
+    background-color: black;
+    color: white;
+    border-bottom:solid rgba(184, 132, 47, 0.21) 8px ;
+}
+/* Kemi bere ndarjen e elementeve te ndare ne div tags dhe vendosjen e tyre ne menyre te rregullt */
+.ab_third_middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Kemi vendosur stilizimet e imazhit seperator */
+.seperator{
+    width: 200px;
+    height: 40px;
+    margin-left: 660px;
+}
+/* Stilizimi per tekstin  */
+.choose_us{
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(153, 93, 34);
+    margin-top: 20px;
+}
+.strengths{
+    font-size: 35px;
+    margin-top: 40px;
+}
+/* Kemi vendosur hapsira ndermjet 3 strength-s dhe me pas kemi vazhduar me stilizimet e tyre 
+duke u vendosur backgroung image dhe pozicionuar ne faqen web */
+.strength0{
+    display: flex;
+    justify-content: space-between;
+}
+.strength1{
+    width:250px;
+    height: 450px;
+    background-image: url(/assets/strength1.png);
+    margin-left: 150px;
+    margin-top: 30px;
+    border: solid rgb(100, 67, 26) 2px;
+}
+.strength2{
+    width:250px;
+    height: 450px;
+    background-image: url(/assets/strength2.png);
+    margin-top: 80px;
+    border: solid rgb(100, 67, 26) 2px;
+}
+.strength3{
+    width:250px;
+    height: 450px;
+    background-image: url(/assets/strength3.png);
+    margin-right: 150px;
+    margin-top: 30px;
+    border: solid rgb(100, 67, 26) 2px;
+}
+/* Me poshte jane bere stilizimet e butonave te vendosur brenda div tags, duke i vendosur ato dhe ne pozicionin e duhur */
+.bt_st_1,
+.bt_st_2,
+.bt_st_3{
+    color: white;
+    background-color:  rgba(135, 90, 34, 0.9);
+    margin-left: 70px;
+    margin-top: 370px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: solid black 2px;
+    border-radius: 8px;
+}
+.bt_st_2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.bt_st_3{
+    margin-top: 390px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* Kemi vendosur nje boxshadow ne div-et e mesiperm te cilat do te shfaqen vetem kur pointeri shkon tek to */
+.strength1:hover,
+.strength2:hover,
+.strength3:hover{
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.3);
+}
+
+
+/* STILIZIMET PER MOBILE ME MADHESI EKRANI (414px-1200px) */
+
+ @media only screen and (min-width: 414px) and (max-width: 1200px){
+    /* Vendosja e nje gjeresie 100% dhe heqja e mundesise se scroll-it horizontalisht  */
+    html,body{
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+      }
+      /* Vendosja e elementeve ne pjesen e dyte ne kolona per paraqitje me te mire ne mobile */
+      .ab_second_part{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }  
+    /* Vendosja e stilizimeve te paragrafeve dhe fotos te kesaj pjese te dyte */
+       .paragraph{
+        margin-top: 0px;
+        padding-top: 7px;
+        padding-left: 7px;
+        padding-right: 7px;
+        height: 265px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+    }
+    .ab_image{
+        width: 200px;
+        height: 210px;
+        margin-top: 7px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .timetable{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    /* Vendosja e lartesise qe do te zej pjesa e trete, stilizimi i ndaresit (foto) */
+    .ab_third_part{
+        height:auto;
+    }
+    .seperator{
+        width: 100px;
+        height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Vendosja ne kolone e elementeve te pjeses se trete dhe vendosja ne mes te faqes */
+    .strength0{
+        display: flex;
+        flex-direction: column;
+    }
+    .strength1,
+    .strength2,
+    .strength3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

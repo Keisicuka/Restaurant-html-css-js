@@ -1,0 +1,331 @@
+/* Me ane te ketij grupi kodi bejme te mundur fshirjen e cdo hapsire te mundshme ne faqen e web-it per ta perfshire te 
+gjithe ate ne stilizim. */
+*{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Vendosim marginat e pjeses body te faqes tone dhe ngarkoje foton qe do te sherbeje si bg */
+body{
+    background-image: url(/assets/blogbackground.jpg); 
+    background-size: contain;
+    height: 20%;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* Vendosim stilizimet per pjesen e pare te home ku kemi vendosur foton dhe pershkrimin */
+.home-first{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 250px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: solid rgba(0, 0, 0, 0.512) 10px;
+ 
+}
+/* Vendosim stilizimet per pershkrimin */
+.background-text{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:xx-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color:rgb(17, 90, 28);
+    margin-bottom: 220px;
+}
+/* Vendosim stilizimet per pjesen e dyte te home e cila permban njoftimet */
+.home-second{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    border: solid rgba(0, 0, 0, 0.512) 10px;
+}
+/* Vendosim stilizimet per titujt, paragrafet dhe imazhet */
+.hs-heading1{
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.hs-paragraph{
+    color: white;
+    font-family:cursive;
+}
+.hs-images{
+    margin-top:60px ;
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    justify-content: center;
+    height:500px;
+}
+.image1{
+    background-image: url(/assets/eat.jpg);
+    background-size:cover;
+    width: 400px;
+    height:500px;
+    margin:10px;
+    border-radius: 20px;
+}
+.image2{
+    background-image: url(/assets/stay.jpg);
+    background-size: cover;
+    width: 400px;
+    height:500px;
+    margin:10px;
+    border-radius: 20px;
+}
+.image3{
+    background-image: url(/assets/sleep.jpg);
+    background-size: cover;
+    width: 400px;
+    height:500px;
+    margin:10px;
+    border-radius: 20px;
+}
+
+/* Vendosim stilizimet per pjesen e dyte te home e cila permban njoftimet mbi aktivitetet */
+.home-last{
+    border: solid black 50px;
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+}
+
+/* Vendosim stilizimet mbi kutine e pare qe do te permbaje imazh dhe kutine e dyte qe do te permbaje tekst */
+.first-part{
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0);
+    width:600px;
+    height:400px;
+}
+.second-part{
+    text-align: center;
+    margin-top: 15px;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    color:rgba(255, 255, 255, 0.42);
+   
+}
+/* Vendosim stilizimet per imazhin e vendosur, titujt dhe paragrafin */
+.hl-image{
+    width: 550px;
+    height: 400px;
+    align-self: center;
+    border-radius: 10px;
+}
+.hl-heading1{
+    text-align:center;
+    margin-top: 100px;
+    font-size:xx-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgba(165, 42, 42, 0.781);
+}
+
+.hl-paragraph1{
+    margin-top: 200px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* Vendosim stilizimet per pjesen e fundit te faqes qe do te permbaje keshilla gatimi */
+.home-third{ 
+    background-color: black;
+    border-top: solid black 50px;
+    border-left: solid black 50px;
+    border-right: solid black 50px;
+    border-bottom:solid black 1px;
+    display: grid;
+    justify-content: center;
+}
+/* Vendosim stilizimet per titujt, paragrafet */
+.ht-heading1{
+color:white;
+font-family:Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+}
+.ht-paragraph1{
+    color:white;   
+    margin-bottom: 50px;
+    font-family:cursive;
+    text-align: center;
+}
+/* Vendosim stilizimet mbi linqet */
+.home-third a{
+    text-decoration: none;
+    color: black;
+}
+.home-third a:hover{
+    color:chocolate;
+}
+/* Vendosim stilizimet mbi rreshtat qe do te permbajne nga dy kutia */
+.line1,.line2,.line3,.line4,.line5,.line6{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+/* Vendosim stilizimet per secilen kuti te cdo rreshti duke pasur parasysh permasat, ngjyren e bg, borderat etj */
+.leftbox1{
+    background-image: url(/assets/calamari.jpg);
+    background-size:cover;
+    width: 400px;
+    height: 300px;    
+}
+.rightbox1{
+    background-color: aliceblue;
+    color: black;
+     width: 400px;
+    height: 300px;
+    border-left: solid black 6px;
+}
+.leftbox1,.rightbox1{
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+}
+.leftbox2{
+    background-image: url(/assets/shellphish.jpg);
+    background-size: cover;
+}
+.rightbox2{
+    background-color: aliceblue;
+    color: black;
+    border-left: solid black 6px;
+}
+.leftbox2, .rightbox2{
+   width:600px;
+   height: 300px;
+   display: inline-block;
+   border-radius: 10px;
+}
+.leftbox3{
+    background-image: url(/assets/seafood.jpg);
+    background-size: cover;   
+}
+.rightbox3{
+    background-color: aliceblue;
+    color: black;
+    border-left: solid black 6px;
+}
+.leftbox3, .rightbox3{
+    width:600px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.leftbox4{
+    background-image: url(/assets/drinks.jpg);
+    background-size: cover;
+}
+.rightbox4{
+    background-color: aliceblue;
+    color: black;
+    border-left: solid black 6px;
+}
+.leftbox4,
+.rightbox4{
+    width:600px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.leftbox5{
+    background-image: url(/assets/suprising.jpg);
+    background-size: cover;
+}
+
+.rightbox5{
+    background-color: aliceblue;
+    color: black;
+    border-left: solid black 6px;
+}
+.leftbox5,
+.rightbox5{
+    width:600px;
+    height: 300px;
+     display: inline-block;
+     border-radius: 10px;
+ 
+}
+
+.leftbox6{
+    background-image: url(/assets/shrimp.jpg);
+    background-size: cover;
+   
+}
+.rightbox6{
+    background-color: aliceblue;
+    color: black;
+    border-left: solid black 6px;
+
+}
+.leftbox6,
+.rightbox6{
+    width:600px;
+    height: 300px;
+     display: inline-block;
+     border-radius: 10px;
+ 
+}
+/* Vendosim stilizimet per titujt dhe paragrafet e seciles nga kutiat */
+.ht-paragraph{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.ht-paragraph{
+    text-align: center;
+}
+
+.ht-heading2{
+    margin-top: 65px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* STILIZIMET PER MOBILE ME MADHESI EKRANI (414px-1200px) */
+
+@media only screen and (min-width: 414px) and (max-width: 1200px){
+    /* Heqja e scroll-it horizontal */
+    html,body{
+      overflow-x: hidden;
+    }
+    /* Rregullimet e imazhit ne background */
+    body{
+        background-repeat: no-repeat;
+        background-size:auto;
+    }
+    /* Vendosja e imazheve te 2 pjeseve te ndryshme ne kolona njera pas tjetres */
+    .hs-images{
+        display:flex;
+        justify-content: center;
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .line1,
+    .line2,
+    .line3,
+    .line4,
+    .line5,
+    .line6{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* Rregullimi i paragrafit te blogut */
+    .ht-paragraph{
+        font-size: 15px;  
+        text-align: center;
+    }
+  }
+  

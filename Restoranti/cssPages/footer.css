@@ -1,0 +1,63 @@
+/* vensdosim stilizimet  baze mbi pjesen e footerit */
+.underfooter{
+  background-color: #000000d9;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+/* Vendosim stilizimet per titullin */
+.heading-footer{
+font-size: larger;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 60px;
+    
+
+}
+/* Vendosim stilizimet per paragrafin qe fton klientet te bejne subscribe faqen tone */
+.text-footer{
+    color:white;
+    font-family:cursive; 
+}
+/* Vendosim stilizimet per butonin qe do te beje submit */
+.f-button {
+  background-color:rgba(245, 245, 245, 0.589);
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    text-align: left;
+    display: inline-block;
+    font-size: 12px;
+    font-family:'Times New Roman', Times, serif;
+    
+  }
+  /* Vendosim stilizimet per fushen ku klientet do te vendosin emailin */
+  .text-area{
+    background-color:rgba(245, 245, 245, 0.589);
+    padding: 10px 30px;
+    text-align: left;
+    display: inline-block;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 10px;   
+  }
+
+    /* STILIZIMET PER MOBILE ME MADHESI EKRANI (414px-1200px) */
+
+  @media only screen and (min-width: 414px) and (max-width: 1200px){
+     /* Heqja e scroll-it horizontal dhe vendosja e gjeresise sa faqja  */
+    .underfooter{
+      width: 100%;
+      margin: 0px;
+    }
+    /* Rregullimi ne stilizimin e fontit  */
+    .text-footer{
+      font-size: 12px;
+      align-items: center;
+    }
+}
+
+  

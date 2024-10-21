@@ -1,0 +1,109 @@
+/* Vendosim ngjyren e background-it dhe me 0.7 e bejme ngjyren pak transparente */
+.navbar{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+
+/* UPPER NAVBAR */
+
+/* I vendosim 4 elementet ne nje rresht i cili do vendoset ne te 
+djathe te faqes */
+.upper-navbar{
+    display: flex;
+    justify-content: end;
+}
+/* Bejme stilizimet e fotos se pare  */
+.loginImg{
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+}
+/*Bejme stilizimin e linkut Login */
+.Login {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 35px;
+    margin-right: 33px;
+    padding-right: 7px;
+    padding-left: 7px;
+    background-color: rgba(0, 0, 0, 0);
+}
+/* Bejme stilizimet e 2 link-eve te tjera */
+.instagram ,
+.twitter{
+    text-decoration: none;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+/* Bejme stilizimet e logove */
+.instagramImg, .twitterImg{
+    width:50px;
+}
+
+
+/* MIDDLE-NAVBAR */
+
+/* Bejme stilizimet e titullit dhe ndarjen e pjeses se poshtme
+me ane te border-it*/
+.middle-navbar{
+    text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    color: white;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.367);
+    padding-bottom: 20px;
+}
+
+
+/* BOTTOM-NAVBAR */
+
+/* Ne keto 2 blloqe kodi u japim stilizimet e pershtatshme link-eve duke krijuar hapsira midis tyre
+dhe duke i dhene font-it stilizime*/
+.bottom-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 10px;
+}
+.bottom-navbar a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 5500;
+    padding-top: 10px;
+    border: solid  rgba(255, 255, 255, 0) 5px;
+    padding: 5px;
+}
+/*Stilizimi i poshtem behet i mundur vetem kur cursori jone 
+ndodhet siper links duke u ndryshuar ngjyre dhe vendosur border te siperm */
+.bottom-navbar a:hover{
+    border-top: solid rgb(192, 140, 68) 5px;
+    color: rgb(255, 185, 86);
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+ /* STILIZIMET PER MOBILE ME MADHESI EKRANI (414px-1200px) */
+
+@media only screen and (min-width: 414px) and (max-width: 1200px){
+    /* Vendosja e gjeresise sa faqja  */
+    .navbar{
+        width: 100%;
+    }
+    /* Vendosja e links ne rresht dhe rregullimi i fontit  */
+    .bottom-navbar{
+        display: flex;
+        justify-content:space-between;
+        margin: 0px;
+    }
+    .bottom-navbar a{
+        font-size: 17px;
+        padding: 3px;
+    }
+}

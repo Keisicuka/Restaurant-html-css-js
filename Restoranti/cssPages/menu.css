@@ -1,0 +1,106 @@
+/* Me ane te ketij grupi kodi bejme te mundur fshirjen e cdo hapsire te mundshme ne faqen e web per ta perfshire te 
+gjithe ate ne stilizim. */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Kemi vendosur ne te gjithe trupin e faqes se webit si background imazhin me poshte */
+body{
+    background-image: url(/assets/menu.avif);
+    background-size:auto;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+}
+/* Stilizimi i titullit te faqes menu */
+.menu_home{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: solid rgba(0, 0, 0, 0.512) 10px;
+}
+
+/* Vendosja e nje background color me lartesine e duhur */
+.menu0{
+    height: 2400px;
+    background-color: rgb(59, 59, 59);
+    border-bottom: solid rgba(0, 0, 0, 0.379) 15px;
+}
+
+/* Stilizimi i titullit tek menuja e ndare ne seksione */
+.title_menu{
+    text-align: center;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+/* Vendosja e elementeve te menus ne qender */
+.menu_diff{
+    display: flex;
+    justify-content: center;
+}
+ /* Pozicionimi i elementeve te menus ne menyren e duhur ne qender ne faqes */
+.foods{
+    flex-direction: column;
+    border: solid rgba(255, 255, 255, 0.273) 5px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 15px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+.firstC,
+.secondC,
+.thirdC,
+.fourthC{
+    display: flex;
+    flex-direction: column;
+    border: solid rgba(255, 255, 255, 0.273) 5px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.omlete, .omlete_veg, .eggFr, .eggSc, .toast,
+.crepes, .donuts, .pancake{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+.price{
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+ /* STILIZIMET PER MOBILE ME MADHESI EKRANI (414px-1200px) */
+
+@media only screen and (min-width: 414px) and (max-width: 1200px){
+     /* Heqja e scroll-it horizontal */
+    html,body{
+      overflow-x: hidden;
+    }
+    /* Vendosja e elementeve ne kolona dhe ne qender */
+    .menu_diff{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* Vendosja e gjatesise se menu0 */
+    .menu0{
+        height: auto;
+    }
+  }
+  
